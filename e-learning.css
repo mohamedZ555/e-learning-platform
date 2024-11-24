@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+body{
+    height: 100vh;
+    background-color: rgb(37, 37, 37);
+}
+.home{
+    width: 100%;
+    padding-bottom: 150px;
+    position: relative;
+}
+.bg{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    opacity: .5;
+    height: 100%;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10%;
+    background-color: rgba(255, 255, 255, 0.151);
+    backdrop-filter: blur(5px);
+    width: 100%;
+}
+
+.logo{
+    color: white;
+    font-size: 25px;
+}
+
+ul{
+  display: flex;
+  gap: 20px;  
+  align-items: center;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: rgb(18, 209, 129);
+}
+
+.login{
+    padding: 5px 35px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid rgb(18, 209, 129);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.login:active{
+    color: black;
+    background-color:rgb(18, 209, 129) ;
+}
+.text{
+margin: 150px 10% 0;
+}
+
+.description{
+    font-weight: lighter;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.text-p{
+    font-size: 15px;
+    color:rgb(27 198 126);
+}
+
+.head-l{
+    font-size: 50px;
+    color: white;
+    margin: 20px 0;
+    
+}
+
