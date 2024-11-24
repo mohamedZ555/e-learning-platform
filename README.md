@@ -1,4 +1,4 @@
-# Plan Your Features
+# Features Plane
 Determine the core functionalities of your e-learning platform:
 
 * User Management:
