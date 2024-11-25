@@ -4,6 +4,7 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    color: white;
 }
 
 body{
@@ -27,14 +28,13 @@ body{
 .nav{
     display: flex;
     justify-content: space-between;
+    width: 100%;
     padding: 20px 10%;
     background-color: rgba(255, 255, 255, 0.151);
     backdrop-filter: blur(5px);
-    width: 100%;
 }
 
 .logo{
-    color: white;
     font-size: 25px;
 }
 
@@ -48,7 +48,6 @@ li{
 }
 a{
     text-decoration: none;
-    color: white;
 }
 
 a:hover{
@@ -58,7 +57,6 @@ a:hover{
 .login{
     padding: 5px 35px;
     background-color: transparent;
-    color: white;
     border: 2px solid rgb(18, 209, 129);
     border-radius: 20px;
     cursor: pointer;
@@ -74,7 +72,6 @@ margin: 150px 10% 0;
 
 .description{
     font-weight: lighter;
-    color: white;
     margin-bottom: 50px;
 }
 
@@ -85,8 +82,65 @@ margin: 150px 10% 0;
 
 .head-l{
     font-size: 50px;
-    color: white;
     margin: 20px 0;
     
 }
 
+.sign-in{
+    z-index: 2000;
+    box-shadow: 0  5px 10px 0 rgb(0, 0, 0);
+    width: 40%;
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    padding: 2% 2% 5%;
+    backdrop-filter: blur(5px);
+}
+
+input{
+    padding: 7px 0 7px 20px;
+    width: 100%;
+    margin: 10px auto ;
+    border-radius: 20px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid black;
+    font-size: 15px;
+}
+.pos{
+    position: relative;
+    margin-top: 20px;
+}
+
+.icon{
+    width: 20px;
+    position: absolute;
+    right: 3%;
+    top: 49%;
+}
+
+.Forget{
+    text-decoration: underline;
+}
+
+.sub{
+    width: 60%;
+    margin: 20px 20% 30px;
+    background-color: transparent;
+    padding: 8px 0;
+    color: white;
+    border: 2px solid rgb(18, 209, 129);
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.sub:active{
+    color: black;
+    background-color: rgb(18, 209, 129);
+}
+
+label{
+    font-size: 18px;
+}
