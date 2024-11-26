@@ -1,4 +1,6 @@
 from django.db import models
+from django.contrib.auth.hashers import make_password
+
 
 # Create your models here.
 class Role(models.Model):
@@ -23,7 +25,11 @@ class Users(models.Model):
     role_id = models.ForeignKey('Role', on_delete=models.CASCADE)  # Foreign key to Role
     student_id = models.ForeignKey('Student', on_delete=models.SET_NULL, null=True, blank=True)
     instructor_id = models.ForeignKey('Instructor', on_delete=models.SET_NULL, null=True, blank=True)
-
+    def save(self, *args, **kwargs):
+        # Hash password before saving
+        if not self.password.startswith('pbkdf2_'):  # Avoid rehashing an already hashed password
+            self.password = make_password(self.password)
+        super().save(*args, **kwargs)
     def __str__(self):
         return self.username
 # Department model (for categorizing courses)
@@ -77,7 +83,7 @@ class CourseMedia(models.Model):
     media_id = models.AutoField(primary_key=True)
     course = models.ForeignKey(Course, on_delete=models.CASCADE, related_name='media')  # ForeignKey to Course
     media_type = models.CharField(max_length=20, choices=MEDIA_TYPES)  # Type of media (video, audio, etc.)
-    media_file = models.FileField(upload_to='course_media/')  # File upload path
+    media_file = models.FileField(upload_to='project/course_media/')  # File upload path
     upload_date = models.DateTimeField(auto_now_add=True)  # Upload date
 
     def __str__(self):
