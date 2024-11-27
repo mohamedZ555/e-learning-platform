@@ -22,8 +22,7 @@ body{
     left: 0;
     top: 0;
     z-index: -1;
-    opacity: .5;
-    height: 100%;
+    opacity: .7;
 }
 .nav{
     display: flex;
@@ -97,8 +96,9 @@ margin: 150px 10% 0;
     border: 1px solid rgb(0, 0, 0);
     border-radius: 20px;
     padding: 2% 2% 5%;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(20px);
     overflow: hidden;
+    display: none;
 }
 
 input{
@@ -110,6 +110,9 @@ input{
     background-color: transparent;
     border-bottom: 2px solid black;
     font-size: 15px;
+}
+input::placeholder{
+    color: rgba(255, 255, 255, 0.712);
 }
 .pos{
     position: relative;
@@ -127,7 +130,7 @@ input{
     text-decoration: underline;
 }
 
-#sub{
+.submm{
     width: 60%;
     margin: 20px 20% 30px;
     background-color: transparent;
@@ -138,11 +141,25 @@ input{
     cursor: pointer;
     font-size: 18px;
 }
-.sub:active{
+.submm:active{
     color: black;
     background-color: rgb(18, 209, 129);
 }
 
 label{
     font-size: 18px;
+    
+}
+
+#register{
+    display: none;
+}
+
+#regist:hover{
+    cursor:pointer ;
+    color: rgb(18, 209, 129)
+}
+#lom:hover{
+    cursor:pointer ;
+    color: rgb(18, 209, 129)
 }
