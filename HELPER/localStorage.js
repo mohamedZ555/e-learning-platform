@@ -3,3 +3,11 @@ export function localStorageGetter() {
 
   return usersDummyTable;
 }
+
+export function localStorageSetter(newUser) {
+  let savedUsers = localStorageGetter().map((saved) => {
+    return [...saved, newUser];
+  });
+
+  localStorage.setItem("users", JSON.stringify(savedUsers));
+}
