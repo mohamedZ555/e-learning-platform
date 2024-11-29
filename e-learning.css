@@ -163,3 +163,19 @@ label{
     cursor:pointer ;
     color: rgb(18, 209, 129)
 }
+
+.standVideos{
+    width: 100%;
+    height: 200px;
+    margin: auto;
+    border: 2px solid black;
+    /* border-radius: 10px; */
+    background-color: rgba(0, 0, 0, 0.527);
+    box-shadow: inset 0 0 20px 0 rgba(139, 139, 139, 0.342);
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    gap: 20px;
+}
