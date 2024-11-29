@@ -10,6 +10,9 @@ body {
   width: 100% !important;
   overflow: hidden;
 }
+.res-headline {
+  display: none;
+}
 .main-container {
   width: 100%;
   display: flex;
@@ -157,4 +160,49 @@ input:focus {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+}
+
+@media screen and (max-width: 1200px) {
+  .logo-text {
+    font-size: 32px;
+  }
+  .logo::after {
+    height: 8px;
+  }
+  .bottom-headline {
+    font-size: 16px;
+  }
+  .bottom-para {
+    font-size: 14px !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .side-panel-design {
+    display: none;
+  }
+  .res-headline {
+    display: block;
+    width: 100%;
+    padding: 35px;
+    & p {
+      color: #0f4e34;
+    }
+  }
+  .main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .form-wrapper {
+    width: 100% !important;
+    height: 70vh;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .form {
+    width: 75% !important;
+  }
 }
