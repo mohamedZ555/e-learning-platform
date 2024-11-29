@@ -10,5 +10,4 @@ loginBtn.addEventListener("click", (e) => {
   inputs.forEach((inp) => {
     requestBody = { ...requestBody, [`${inp.name}`]: inp.value };
   });
-  console.log(requestBody);
 });
