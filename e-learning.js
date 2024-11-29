@@ -59,6 +59,7 @@ video.forEach((src) => {
   const img = document.createElement("img");
   img.src = src;
   img.alt = "Video Thumbnail";
+  img.style.width = "20%"
   img.style.height = "150px" 
   videos.appendChild(img);
 });
