@@ -6,16 +6,13 @@
 }
 
 
-.header-container
-{
+.header-container{
   position: fixed;
-
     width: 100%;
     display: flex;
   justify-content: space-between;
   padding-inline: 20px;
   padding-block: 25px;
-
 }
 .logo-container{
     color: white !important;
@@ -24,27 +21,32 @@
     }
 }
 
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
 .nav-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .list-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
-    .list-wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 25px;
-      & li {
-        list-style: none;
-       & a {
-        /* color: white !important ; */
+    gap: 25px;
+    & li {
+      list-style: none;
+      & a {
         text-decoration: none;
         font-weight: bolder;
         
-
-       }
-       
+        
+      }
+      
     }
-    }
+  }
 }
 .nav-link{
   color: white;
@@ -59,41 +61,42 @@
   margin-top: 2px;
   background-color: #1bc67e;
   transition: .3s ease;
-
+  
 }
 .nav-link:hover::after{
   width: 100%;
 }
 .nav-link:hover {
   color: #1bc67e !important;
- }
+}
+.login-btn:active{
+  color: black;
+  background-color:rgb(18, 209, 129) ;
+}
 .login-btn{
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    padding: 8px 21px;
-    border: 2px solid #1bc67e;
-    border-radius: 5px;
-     & a {
-      color: white;
-      text-decoration: none;
-
-     }
+  padding: 5px 35px;
+  border: 2px solid rgb(18, 209, 129);
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .bg-section{
   height: 35vh;
   width: 100%;
-display: flex;
-align-items: center;
-justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-image:url(../imgs/Best\ Data\ Labeling\ Tools\ For\ Machine\ Learning\ in\ 2023.jpg) ;
   background-color: #000000bb ;
   background-blend-mode: overlay;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
-
+  
+  
 }
 .bg-text{
   width: 75%;
@@ -108,4 +111,16 @@ justify-content: center;
     font-size: 16px;
     color: white;
   }
+}
+
+.courses-wrapper{
+  width: 75%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.image-cont{
+  width: 300px;
+  height: 200px;
 }
