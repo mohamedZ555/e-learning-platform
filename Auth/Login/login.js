@@ -10,7 +10,7 @@ loginBtn.addEventListener("click", (e) => {
   inputs.forEach((inp) => {
     requestBody = { ...requestBody, [`${inp.name}`]: inp.value };
   });
-  debugger;
+
   if (!requestBody.Password?.length || !requestBody.UserName?.length) {
     alert("Please add your credentials");
     return;
@@ -26,7 +26,7 @@ loginBtn.addEventListener("click", (e) => {
     alert("User is not authorized");
     return;
   }
-  location.href = "../../e-learning.html";
+  location.href = "../../Home/e-learning.html";
 });
 
 function localStorageGetter() {

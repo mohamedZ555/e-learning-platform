@@ -52,14 +52,29 @@ let video = [
   "../imgs/showVideo/finger-2956974_640.jpg",
   "../imgs/showVideo/kids-5560586_640.jpg",
   "../imgs/showVideo/kindle-1867751_1280.jpg",
-  "../imgs/Preview (1).png"
+  "../imgs/Preview (1).png",
 ];
 
 video.forEach((src) => {
   const img = document.createElement("img");
   img.src = src;
   img.alt = "Video Thumbnail";
-  img.style.width = "250px"
-  img.style.height = "150px" 
+  img.style.width = "250px";
+  img.style.height = "150px";
   videos.appendChild(img);
 });
+
+window.onscroll = function () {
+  myScrollFunction();
+};
+
+function myScrollFunction() {
+  if (
+    document.body.scrollTop > 100 ||
+    document.documentElement.scrollTop > 100
+  ) {
+    document.getElementById("header").classList.add("animateHeader");
+  } else {
+    document.getElementById("header").classList.remove("animateHeader");
+  }
+}
