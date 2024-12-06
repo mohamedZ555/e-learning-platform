@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+
+body{
+    height: 100vh;
+    background-image:url(../imgs/istockphoto-1931634876-612x612.jpg) ;
+    background-color: #00000050 ;
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.header-container{
+    position: fixed;
+      width: 100%;
+      display: flex;
+    justify-content: space-between;
+    padding-inline: 20px;
+    padding-block: 25px;
+  }
+  .logo-container{
+      color: white !important;
+      & span {
+          color:#1bc67e  !important;
+      }
+  }
+  
+  .nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .list-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 25px;
+      & li {
+        list-style: none;
+        & a {
+          text-decoration: none;
+          font-weight: bolder;
+        }
+      }
+    }
+  }
+  .nav-link{
+    color: white;
+    transition: .3s ease;
+  }
+  .nav-link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px ;
+    transform-origin: center;
+    margin-top: 2px;
+    background-color: #1bc67e;
+    transition: .3s ease;
+  
+  }
+  .nav-link:hover::after{
+    width: 100%;
+  }
+  .nav-link:hover {
+    color: #1bc67e !important;
+   }
+a{
+    text-decoration: none;
+}
+.login{
+    padding: 5px 35px;
+    border: 2px solid rgb(18, 209, 129);
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login:active{
+    color: black;
+    background-color:rgb(18, 209, 129) ;
+}
+.main{
+    width: 75%;
+    margin: auto;
+    padding: 150px 0;
+}
+
+.description{
+    font-weight: lighter;
+    margin-bottom: 50px;
+    color: rgb(212, 212, 212);
+}
+
+.text-p{
+    font-size: 15px;
+    color:rgb(27 198 126);
+}
+
+.head-l{
+    font-size: 50px;
+    margin: 20px 0;
+    
+}
+
+.standVideos{
+    width: 100%;
+    height: 200px;
+    border: 3px solid black;
+    background-color: rgb(0, 0, 0);
+    box-shadow: inset 0 0 20px 0 rgb(18, 209, 129);
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    gap: 20px;
+}
+
