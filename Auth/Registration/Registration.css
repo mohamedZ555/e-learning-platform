@@ -159,7 +159,13 @@ input:focus {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
+  padding-inline: 8px;
+}
+.sign-up-btn {
+  text-decoration: none;
+  font-size: 14px;
+  color: #03915b;
 }
 
 @media screen and (max-width: 1200px) {

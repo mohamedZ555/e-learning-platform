@@ -10,8 +10,8 @@ loginBtn.addEventListener("click", (e) => {
   inputs.forEach((inp) => {
     requestBody = { ...requestBody, [`${inp.name}`]: inp.value };
   });
-
-  if (requestBody.Password || requestBody.UserName) {
+  debugger;
+  if (!requestBody.Password?.length || !requestBody.UserName?.length) {
     alert("Please add your credentials");
     return;
   }
