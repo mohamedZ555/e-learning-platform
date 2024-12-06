@@ -32,6 +32,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+#Add project user modle 
+#AUTH_USER_MODEL = 'project.users'
+
+
 
 # Application definition
 

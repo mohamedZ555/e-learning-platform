@@ -18,10 +18,17 @@ from django.contrib import admin
 from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
+from django.views.generic import TemplateView
+from . import views
+
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', TemplateView.as_view(template_name='index.html'), name='index'),
+    #path('login/', TemplateView.as_view(template_name='login.html'), name='login'),
+    path('login/', views.login_view, name='login'),
+
 ]
 
 # Add this to serve media files in development

@@ -1,5 +1,7 @@
 from django.db import models
 from django.contrib.auth.hashers import make_password
+from django.contrib.auth.models import User
+
 
 
 # Create your models here.
@@ -25,6 +27,8 @@ class Users(models.Model):
     role_id = models.ForeignKey('Role', on_delete=models.CASCADE)  # Foreign key to Role
     student_id = models.ForeignKey('Student', on_delete=models.SET_NULL, null=True, blank=True)
     instructor_id = models.ForeignKey('Instructor', on_delete=models.SET_NULL, null=True, blank=True)
+    auth_user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='custom_user', null=True, blank=True)
+
     def save(self, *args, **kwargs):
         # Hash password before saving
         if not self.password.startswith('pbkdf2_'):  # Avoid rehashing an already hashed password

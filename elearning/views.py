@@ -10,5 +10,7 @@ def dashboard(request):
 
 def index(request):
     return render(request, 'index.html')
-def login(request):
+# def login(request):
+#     return render(request, 'login.html')
+def login_view(request):
     return render(request, 'login.html')
