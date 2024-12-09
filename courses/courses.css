@@ -173,3 +173,65 @@ a {
     opacity: 1;
   }
 }
+
+footer{
+  background-image: url(../imgs/Best\ Data\ Labeling\ Tools\ For\ Machine\ Learning\ in\ 2023.jpg);
+  background-color: #000000bb;
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  color: white;
+}
+
+.cont-footer{
+  width: 98%; 
+  margin: auto;
+  padding-top: 40px;
+}
+
+.svg{
+  width: 20px;
+  height: 20px;
+}
+
+.flex{
+  display: flex;
+  gap: 20px;
+  margin-top: 35px;
+  align-items: center;
+  padding-left: 60px;
+}
+
+.link-footer{
+  display:flex;
+  gap: 60px;
+}
+
+.a{
+  display: flex;
+  flex-direction: column;
+ width: auto;
+ margin: auto;
+  gap: 40px;
+}
+
+.a a:hover{
+  color: #1bc67e;
+}
+.control{
+  display: flex;
+  width: 90%;
+  margin: auto;
+  gap: 200px;
+  margin-top: 20px;
+}
+.last {
+  width: 85%;
+  margin: auto;
+  text-align: end;
+  padding-bottom: 60px;
+  font-size: 12px;
+  margin-top: 30px;
+}
