@@ -93,7 +93,7 @@ a {
   justify-content: center;
 }
 .bg-section {
-  height: 35vh;
+  height: 40vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -117,6 +117,7 @@ a {
     text-transform: capitalize;
     font-size: 16px;
     color: white;
+    padding-top: 10px;
   }
 }
 
