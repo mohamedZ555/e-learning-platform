@@ -150,7 +150,13 @@
     height: 30px;
   }
   
-
+main{
+  background-image: url(../imgs/Preview\ \(1\).jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 50px;
+  
+}
 
 
 

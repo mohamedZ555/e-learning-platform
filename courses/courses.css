@@ -105,6 +105,12 @@ a {
   background-repeat: no-repeat;
   background-position: center;
 }
+main{
+  background-image: url(../imgs/Preview\ \(1\).jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 50px;
+}
 .bg-text {
   width: 75%;
   transform: translateY(50px);
